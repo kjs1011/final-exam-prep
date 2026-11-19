@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="인간공학 개념 학습, 암기 카드와 연습문제.">
+  <title>인간공학 · 학습 노트</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./content.js"></script>
+  <script defer src="./experiments.js"></script>
+  <script defer src="./app.js"></script>
+  <link rel="stylesheet" href="../../assets/course-nav.css">
+</head>
+<body data-study-course="human-factors">
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <aside class="sidebar" id="sidebar" aria-label="학습 목차">
+    <a class="brand" href="#overview" aria-label="인간공학 첫 화면"><span class="brand-symbol" aria-hidden="true">h<span>f</span></span><span>인간공학</span></a>
+    <nav class="chapter-switch" id="chapter-switch" aria-label="장 선택"></nav>
+    <a class="chapter-title" id="chapter-title" href="#overview">인간공학 소개</a>
+    <nav id="lesson-nav"></nav>
+  </aside>
+  <button class="sidebar-shade" id="sidebar-shade" aria-label="목차 닫기" hidden></button>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="menu-toggle" aria-label="학습 목차 열기" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="view-tabs" aria-label="학습 방식"><a href="#overview" data-view="learn">개념 학습</a><a href="#memory" data-view="memory">핵심 암기</a><a href="#quiz" data-view="quiz">문제 풀기</a></nav>
+      <button class="search-trigger" id="search-open" aria-label="개념 찾기"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>개념 찾기</span><kbd>/</kbd></button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>인간공학</span><span id="footer-chapter">1장 인간공학 소개</span></footer>
+  </div>
+  <dialog id="search-dialog" class="search-dialog"><form method="dialog" class="search-input-row"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="search-input" type="search" placeholder="개념이나 용어 검색" aria-label="개념이나 용어 검색" autocomplete="off"><button class="icon-button" aria-label="검색 닫기">✕</button></form><div id="search-results"></div><div class="dialog-hint">Enter로 첫 결과 열기 <span>Esc로 닫기</span></div></dialog>
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-title"><form method="dialog"><button class="icon-button" aria-label="그림 닫기">✕</button></form><h2 id="figure-title"></h2><div class="figure-full-image"><img id="figure-full-image" alt=""></div></dialog>
+  <div role="status" class="toast" id="toast"></div>
+  <script defer src="../../assets/catalog.js"></script>
+  <script defer src="../../assets/course-nav.js"></script>
+</body>
+</html>

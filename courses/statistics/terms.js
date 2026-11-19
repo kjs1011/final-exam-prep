@@ -1,0 +1,28 @@
+/* Korean meanings stay visible on each page that uses an abbreviation. */
+window.STUDY_TERMS=[
+ {id:'FPC',label:'FPC',name:'유한모집단 보정',english:'Finite Population Correction',pattern:'\\bFPC\\b'},
+ {id:'iid',label:'i.i.d.',name:'독립·동일분포: 서로 독립 + 같은 분포',english:'Independent and Identically Distributed',pattern:'\\bi\\.i\\.d\\.?'},
+ {id:'SRS',label:'SRS',name:'단순랜덤추출',english:'Simple Random Sampling',pattern:'\\bSRS\\b'},
+ {id:'SE',label:'SE',name:'표준오차: 통계량의 표본 간 변동',english:'Standard Error',pattern:'\\bSE\\b'},
+ {id:'SD',label:'SD·sd',name:'표준편차: 개별 값의 퍼짐',english:'Standard Deviation',pattern:'\\b(?:SD|sd)\\b'},
+ {id:'CI',label:'CI',name:'신뢰구간',english:'Confidence Interval',pattern:'\\bCI\\b'},
+ {id:'df',label:'df·ν',name:'자유도',english:'Degrees of Freedom',pattern:'\\bdf\\b|ν'},
+ {id:'CLT',label:'CLT',name:'중심극한정리',english:'Central Limit Theorem',pattern:'\\bCLT\\b'},
+ {id:'CDF',label:'CDF',name:'누적분포함수',english:'Cumulative Distribution Function',pattern:'\\bCDF\\b'},
+ {id:'pmf',label:'pmf',name:'확률질량함수',english:'Probability Mass Function',pattern:'\\bpmf\\b'},
+ {id:'pdf',label:'pdf',name:'확률밀도함수',english:'Probability Density Function',pattern:'\\bpdf\\b'},
+ {id:'IQR',label:'IQR',name:'사분위범위: 가운데 50%의 범위',english:'Interquartile Range',pattern:'\\bIQR\\b'},
+ {id:'CV',label:'CV',name:'변동계수',english:'Coefficient of Variation',pattern:'\\bCV\\b'},
+ {id:'MAD',label:'MAD',name:'이 자료에서는 중앙값과의 거리 평균',english:'Mean Absolute Deviation around the median in this course',pattern:'\\bMAD\\b'},
+ {id:'MSE',label:'MSE',name:'평균제곱오차',english:'Mean Squared Error',pattern:'\\bMSE\\b'},
+ {id:'SSE',label:'SSE',name:'오차제곱합 또는 잔차제곱합',english:'Sum of Squared Errors',pattern:'\\bSSE\\b'},
+ {id:'SSR',label:'SSR',name:'회귀제곱합',english:'Regression Sum of Squares',pattern:'\\bSSR\\b'},
+ {id:'SST',label:'SST',name:'총제곱합',english:'Total Sum of Squares',pattern:'\\bSST\\b'},
+ {id:'ANOVA',label:'ANOVA',name:'분산분석',english:'Analysis of Variance',pattern:'\\bANOVA\\b'},
+ {id:'E',label:'E',name:'기댓값',english:'Expected Value',pattern:'\\bE\\s*(?=\\(|\\[)'},
+ {id:'Var',label:'Var',name:'분산',english:'Variance',pattern:'\\bVar\\s*(?=\\()'},
+ {id:'Cov',label:'Cov',name:'공분산',english:'Covariance',pattern:'\\bCov\\s*(?=\\()'},
+ {id:'Corr',label:'Corr',name:'상관계수',english:'Correlation',pattern:'\\bCorr\\s*(?=\\()'},
+ {id:'Bias',label:'Bias',name:'편향: 추정량의 평균과 모수의 차이',english:'Bias',pattern:'\\bBias\\s*(?=\\()'},
+ {id:'QQ',label:'Q-Q',name:'분위수를 비교하는 그림',english:'Quantile-Quantile Plot',pattern:'\\bQ-Q\\b'}
+];

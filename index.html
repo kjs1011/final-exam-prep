@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f6ef">
+  <meta name="description" content="기말고사 준비를 한곳에서. 인간공학, 산업공학, 통계학, 물리학 2 강의 노트와 공식, 연습 문제를 휴대폰과 노트북에서 바로 열어보세요.">
+  <title>기말고사 준비</title>
+  <link rel="stylesheet" href="./assets/home.css">
+  <script src="./assets/catalog.js" defer></script>
+  <script src="./assets/search-index.js" defer></script>
+  <script src="./assets/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">기말고사 준비</a>
+      <a class="header-link" href="#subjects">과목 둘러보기</a>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">기말고사 준비를<br class="mobile-break"> 한곳에서.</h1>
+      <p>과목별 핵심 개념부터 공식, 연습 문제까지 바로 찾아 복습하세요.</p>
+      <form id="search-form" role="search">
+        <label for="study-search" class="sr-only">과목이나 개념 검색</label>
+        <input id="study-search" type="search" placeholder="과목이나 개념 검색" autocomplete="off">
+        <button type="submit">검색</button>
+      </form>
+    </section>
+
+    <section id="subjects" aria-labelledby="subjects-title">
+      <h2 id="subjects-title">과목별 학습 자료</h2>
+      <div id="course-list" class="subjects"></div>
+      <noscript>
+        <ul>
+          <li><a href="./courses/human-factors/">인간공학 강의 노트</a></li>
+          <li><a href="./courses/human-factors-review/">인간공학 1–5장 복습</a></li>
+          <li><a href="./courses/human-factors-lab/">인간공학 실험 노트</a></li>
+          <li><a href="./courses/industrial-engineering/">산업공학의 이해</a></li>
+          <li><a href="./courses/statistics/">통계학 공부방</a></li>
+          <li><a href="./courses/physics-2/">물리학 2</a></li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="search-results" aria-labelledby="results-title" hidden>
+      <div class="results-header">
+        <h2 id="results-title">검색 결과</h2>
+        <button type="button" id="clear-search">검색어 지우기</button>
+      </div>
+      <p id="search-status" role="status"></p>
+      <ul id="result-list"></ul>
+    </section>
+  </main>
+</body>
+</html>

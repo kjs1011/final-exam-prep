@@ -1,0 +1,32 @@
+/* Typeset equations remain separate from body prose, with room for tall fractions. */
+.panel .math,.solution-body .math{font-family:inherit;font-size:19px;line-height:2.2;letter-spacing:0;color:#203d43;word-break:normal;overflow-wrap:normal;margin-bottom:20px}
+.formula-row{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:8px 2px 12px;scrollbar-width:thin;scrollbar-color:#b4c9c1 transparent;overscroll-behavior-x:contain}
+.formula-row+.formula-row{padding-top:5px}
+.formula-row>.katex{font-size:1.06em;white-space:normal;line-height:2.15}
+.katex .base{vertical-align:baseline}
+.katex .mfrac .frac-line,.katex .sqrt .sqrt-line{border-color:currentColor}
+.inline-math{font-size:1em;letter-spacing:0;word-break:normal;overflow-wrap:normal}
+.inline-math>.katex{font-size:1.04em;line-height:1.6}
+.inline-math.math-wide{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:7px 0;scrollbar-width:thin}
+.katex .hangul_fallback{font-family:system-ui,'Malgun Gothic',sans-serif;font-size:.87em}
+.practice-question p,.practice-parts li,.solution-body p{line-height:1.95}
+.panel p:not(.math){line-height:1.9}
+.solution-body{padding:27px 30px}
+.practice-table,.table-convention{line-height:1.7}
+@media(max-width:600px){
+ .panel .math,.solution-body .math{font-size:18px;line-height:2.2;margin-bottom:20px}
+ .formula-row{padding:8px 1px 12px}
+ .formula-row>.katex{font-size:1.03em}
+ .inline-math>.katex{font-size:1.01em}
+ .solution-body{padding:23px 20px}
+ .practice-question{padding:24px 20px}
+ .panel{padding:25px 22px}
+}
+@media print{.formula-row{overflow:visible}}
+.term-guide{display:flex;flex-wrap:wrap;gap:7px 22px;margin:-14px 0 25px;padding:0;font-size:12px;line-height:1.8;color:#546761}
+.term-guide>div{display:flex;align-items:baseline;gap:7px;max-width:100%}
+.term-guide dt{flex:none;font-weight:650;color:#264e46}
+.term-guide dd{margin:0;word-break:keep-all;overflow-wrap:anywhere}
+.term-guide abbr{text-decoration:none}
+.solution-body .term-guide,.quiz-result .term-guide{margin:0 0 23px}
+@media(max-width:600px){.term-guide{gap:7px 17px;margin-top:-9px;margin-bottom:22px;font-size:12px}.term-guide>div{gap:6px}.solution-body .term-guide{margin-top:0}}

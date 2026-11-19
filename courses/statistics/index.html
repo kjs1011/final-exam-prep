@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#13796d">
+  <meta name="description" content="통계학 1~9장 핵심 노트와 확인문제. 공식 모음, 통계표, 1~6(1) 범위의 기본 30제·심화 20제를 제공합니다.">
+  <title>통계학 공부방</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="math.css">
+  <link rel="stylesheet" href="formulas.css">
+  <script src="content.js" defer></script>
+  <script src="practice.js" defer></script>
+  <script src="advanced.js" defer></script>
+  <script src="math-content.js" defer></script>
+  <script src="terms.js" defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="../../assets/course-nav.css">
+</head>
+<body data-study-course="statistics">
+  <a href="#lesson" class="skip-link">본문으로</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" id="home" aria-label="통계학 첫 주제"><span class="brand-symbol" aria-hidden="true">Σ</span>통계학<span class="edition">01—09</span></a>
+    <a class="reference-link" href="formulas.html">공식 모음<span aria-hidden="true">↗</span></a>
+    <nav id="chapters" aria-label="장 선택"></nav>
+    <nav id="topics" class="topics" aria-label="주제 선택"></nav>
+    <div class="sidebar-bottom"><button id="saved-open">표시한 내용 <span id="saved-count"></span></button></div>
+  </aside>
+  <div class="workspace">
+    <header class="toolbar">
+      <button class="icon-button menu-button" id="menu" aria-label="목차 열기" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="mode-tabs" role="tablist" aria-label="학습 모드"><button id="mode-ultra" role="tab" aria-selected="true" aria-controls="lesson" data-mode="ultra">초고압축</button><button id="mode-detail" role="tab" aria-selected="false" aria-controls="lesson" data-mode="detail" tabindex="-1">상세</button><button id="mode-quiz" role="tab" aria-selected="false" aria-controls="lesson" data-mode="quiz" tabindex="-1">확인문제</button><button id="mode-practice" role="tab" aria-selected="false" aria-controls="lesson" data-mode="practice" tabindex="-1">연습문제</button></div>
+      <div class="toolbar-actions"><button class="icon-button" id="search-open" aria-label="검색"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button><button class="icon-button" id="focus" aria-label="집중 모드" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button></div>
+    </header>
+    <main id="lesson" tabindex="-1" aria-label="학습 내용"></main>
+  </div>
+  <button class="sidebar-shade" id="shade" aria-label="목차 닫기" hidden></button>
+  <dialog id="search-dialog" aria-label="내용 검색"><div class="dialog-head"><input type="search" id="search-input" placeholder="내용 검색" aria-label="검색어"><button class="icon-button close-dialog" aria-label="닫기">✕</button></div><div id="search-results" class="result-list"></div></dialog>
+  <dialog id="saved-dialog" aria-label="표시한 내용"><div class="dialog-head"><h2>표시한 내용</h2><button class="icon-button close-dialog" aria-label="닫기">✕</button></div><div id="saved-results" class="result-list"></div></dialog>
+  <dialog id="tables-dialog" aria-label="통계표"><div class="dialog-head"><h2>통계표</h2><button class="icon-button close-dialog" aria-label="닫기">✕</button></div><div id="tables-content" class="statistics-tables"></div></dialog>
+  
+  <div class="sr-only" id="status" role="status" aria-live="polite"></div>
+  <script defer src="../../assets/catalog.js"></script>
+  <script defer src="../../assets/course-nav.js"></script>
+</body>
+</html>
