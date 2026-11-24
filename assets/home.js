@@ -30,28 +30,11 @@
   function makeCard(course) {
     const card = element('a', '', 'course-card');
     card.href = courseUrl(course.id);
-    const heading = element('div', '', 'course-heading');
-    heading.append(element('h4', course.title));
-
-    const topics = element('ul', '', 'course-topics');
-    for (const topic of course.topics) topics.append(element('li', topic));
-    card.append(heading, element('p', course.description), topics);
+    card.append(element('h2', course.title));
     return card;
   }
 
-  const groups = new Map();
-  for (const course of courses) {
-    if (!groups.has(course.subject)) groups.set(course.subject, []);
-    groups.get(course.subject).push(course);
-  }
-  for (const [name, group] of groups) {
-    const section = element('section', '', 'subject');
-    section.append(element('h3', name, 'subject-title'));
-    const cards = element('div', '', 'course-grid');
-    for (const course of group) cards.append(makeCard(course));
-    section.append(cards);
-    courseList.append(section);
-  }
+  for (const course of courses) courseList.append(makeCard(course));
 
   function normalize(text) {
     return text.normalize('NFKC').toLocaleLowerCase('ko').replace(/[\s\p{P}\p{S}]+/gu, '');
@@ -91,7 +74,7 @@
       .sort((a, b) => b.score - a.score);
 
     status.textContent = matches.length === 0
-      ? '일치하는 자료가 없어요. 다른 검색어로 찾아보세요.'
+      ? '검색 결과 없음'
       : matches.length + '개 자료' + (matches.length > 40 ? ' · 상위 40개 표시' : '');
     for (const { entry } of matches.slice(0, 40)) {
       const item = element('li', '');
@@ -115,10 +98,5 @@
     search.value = '';
     renderSearch();
     search.focus();
-  });
-  document.querySelector('.header-link').addEventListener('click', () => {
-    if (!subjects.hidden) return;
-    search.value = '';
-    renderSearch();
   });
 })();

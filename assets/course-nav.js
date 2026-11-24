@@ -5,12 +5,12 @@
   const current = document.body.dataset.studyCourse;
   const nav = document.createElement('nav');
   nav.className = 'study-hub-nav';
-  nav.setAttribute('aria-label', '기말고사 준비');
+  nav.setAttribute('aria-label', '과목 이동');
 
   const home = document.createElement('a');
   home.className = 'study-hub-home';
   home.href = root.href;
-  home.textContent = '기말고사 준비';
+  home.textContent = '과목';
 
   const subjects = document.createElement('details');
   const summary = document.createElement('summary');
