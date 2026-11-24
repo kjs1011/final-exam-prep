@@ -7,13 +7,6 @@ window.studyHubCatalog = [
     topics: ['강의 노트', '암기 카드', '연습 문제'],
   },
   {
-    id: 'human-factors-review',
-    subject: '인간공학',
-    title: '인간공학 1–5장 복습',
-    description: '1–5장 핵심 정의와 비교, 계산, 확인 퀴즈.',
-    topics: ['핵심 정리', '확인 퀴즈'],
-  },
-  {
     id: 'human-factors-lab',
     subject: '인간공학',
     title: '인간공학 실험 노트',
