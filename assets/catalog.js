@@ -31,7 +31,7 @@ window.studyHubCatalog = [
     id: 'physics-2',
     subject: '물리학',
     title: '물리학 2',
-    description: '21–30장과 LC 진동 보충, 과제 해설, 움직이는 공식.',
+    description: '21–37장 정리, 과제 1·3·4 해설과 공식.',
     topics: ['공식', '과제 해설', '시뮬레이션'],
   },
 ];
